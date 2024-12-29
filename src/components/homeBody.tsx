@@ -188,7 +188,7 @@ const homeBody = () => {
             <div
               className="text-center mx-auto mb-5 wow fadeInUp"
               data-wow-delay="0.1s"
-              style={{ maxWidth: "600px" }} // Use object style here
+              style={{ maxWidth: "600px" }}
             >
               <p className="d-inline-block bg-secondary text-primary py-1 px-4">
                 Experiences
@@ -204,9 +204,9 @@ const homeBody = () => {
                 className="testimonial-item text-center"
                 data-dot="<img className='img-fluid' src='img/tahami.png' alt='' />"
               >
-                <h4 className="text-uppercase">Tahami Syed</h4>
-                <p className="text-primary">TT AIDS B</p>
-                <span className="fs-5">
+                <h4 className="text-uppercase" style={{ marginBottom: "10px" }}>Tahami Syed</h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>TT AIDS B</p>
+                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
                   Being part of the S.O.R.T. Club has helped me develop both
                   socially and professionally. The club is more than just a
                   group, it's like a family.
@@ -217,9 +217,9 @@ const homeBody = () => {
                 className="testimonial-item text-center"
                 data-dot="<img className='img-fluid' src='img/jogendra.png' alt='' />"
               >
-                <h4 className="text-uppercase">Jogendra Suthar</h4>
-                <p className="text-primary">TT AIDS B</p>
-                <span className="fs-5">
+                <h4 className="text-uppercase" style={{ marginBottom: "10px", marginTop: "40px" }}>Jogendra Suthar</h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>TT AIDS B</p>
+                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
                   SORT CLUB gave me opportunities to participate in
                   skill-building activities and webinars. It helped me improve
                   my communication, technical skills, and confidence.
@@ -230,9 +230,9 @@ const homeBody = () => {
                 className="testimonial-item text-center"
                 data-dot="<img className='img-fluid' src='img/ayush.png' alt='' />"
               >
-                <h4 className="text-uppercase">Ayush Malviya</h4>
-                <p className="text-primary">TT CSE</p>
-                <span className="fs-5">
+                <h4 className="text-uppercase" style={{ marginBottom: "10px", marginTop: "40px" }}>Ayush Malviya</h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>TT CSE</p>
+                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
                   Through the club's workshops and mentorship programs, I
                   learned valuable skills in leadership, personal branding,
                   aiding my personal and professional growth.
@@ -243,6 +243,8 @@ const homeBody = () => {
         </div>
       </section>
       {/* <!-- Testimonial End --> */}
+
+
 
       {/* Contact Starts */}
       <section id="contact">

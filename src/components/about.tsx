@@ -26,6 +26,11 @@ import Member18 from "./img/core/nandika.jpg";
 import Member25 from "./img/core/SAPTARSHI MAITI- PUBLICATION ASSOCIATE.JPG";
 import Member21 from "./img/core/Sneha Kanojiya- Marketting Associate.jpg";
 import Member23 from "./img/core/Suhani Singh- Publication Associate_.jpg";
+import Member26 from "./img/core/Tanushree Tiwari - creative associate .jpg";
+
+import Member27 from "./img/core/shivani.jpg";
+import Member28 from "./img/core/Priyanshi Jain- Literary associate.jpg";
+import Member29 from "./img/core/anurag.png";
 
 import AboutsecImg from "./img/pd.webp";
 // Create About component
@@ -710,6 +715,111 @@ const About: React.FC = () => {
                 </div>
             </div>
 
+
+            <div className="container-xxl py-5">
+                <div className="container">
+                    <div className="row g-4">
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="team-item">
+                        <div className="team-img position-relative overflow-hidden">
+                            <img
+                            className="img-fluid"
+                            src={Member26}
+                            alt="Tanushree Tiwari"
+                            />
+                            <div className="team-social">
+                            <a
+                                className="btn btn-square"
+                                href="https://www.instagram.com/x0xree._"
+                            >
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            </div>
+                        </div>
+                        <div className="bg-secondary text-center p-4">
+                            <h5 className="text-uppercase">Tanushree Tiwari</h5>
+                            <span className="text-primary">Associate</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div className="team-item">
+                        <div className="team-img position-relative overflow-hidden">
+                            <img
+                            className="img-fluid"
+                            src={Member27}
+                            alt="Shivani Pathak"
+                            />
+                            <div className="team-social">
+                            <a
+                                className="btn btn-square"
+                                href="https://www.instagram.com/shivanipathak7496"
+                            >
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            </div>
+                        </div>
+                        <div className="bg-secondary text-center p-4">
+                            <h5 className="text-uppercase">Shivani Pathak</h5>
+                            <span className="text-primary">Associate</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div className="team-item">
+                        <div className="team-img position-relative overflow-hidden">
+                            <img
+                            className="img-fluid"
+                            src={Member28}
+                            alt="Priyanshi Jain"
+                            />
+                            <div className="team-social">
+                            <a
+                                className="btn btn-square"
+                                href="https://www.instagram.com/priyanshi4571"
+                            >
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            </div>
+                        </div>
+                        <div className="bg-secondary text-center p-4">
+                            <h5 className="text-uppercase">Priyanshi Jain</h5>
+                            <span className="text-primary">Associate</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div className="team-item">
+                        <div className="team-img position-relative overflow-hidden">
+                            <img
+                            className="img-fluid"
+                            src={Member29}
+                            alt="Anurag Gupta"
+                            />
+                            <div className="team-social">
+                            <a
+                                className="btn btn-square"
+                                href="https://www.instagram.com/anurag.0904"
+                            >
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            </div>
+                        </div>
+                        <div className="bg-secondary text-center p-4">
+                            <h5 className="text-uppercase">Anurag Gupta</h5>
+                            <span className="text-primary">Associate</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="row g-4">
@@ -823,7 +933,7 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-            
+                                                                                                                             
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="row g-4">
