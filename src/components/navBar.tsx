@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           <a href="events" className="nav-item nav-link">
             Our Events
           </a>
-          <a href="magazineBody" className="nav-item nav-link">
+          <a href="magazine" className="nav-item nav-link">
             Magazine
           </a>
         </div>

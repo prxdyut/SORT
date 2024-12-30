@@ -1,3 +1,5 @@
+import "./lib/animate/animate.min.css";
+import "./lib/owlcarousel/assets/owl.carousel.min.css";
 import "./components/css/bootstrap.min.css"; //global css imports
 import "./components/css/style.css";
 
@@ -26,21 +28,19 @@ function EventsFn() {
     </>
   );
 }
-function MagazineFn(){
-  return(
+function MagazineFn() {
+  return (
     <>
-      <Magazine/>
+      <Magazine />
     </>
   );
 }
-function AboutFn(){
-  return(
+function AboutFn() {
+  return (
     <>
       <About />
     </>
-
   );
-
 }
 function App() {
   return (
@@ -49,8 +49,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsFn />} />
-        <Route path = "/magazineBody" element={<MagazineFn/>}/>
-        <Route path = "/about" element={<AboutFn/>}/>
+        <Route path="/magazine" element={<MagazineFn />} />
+        <Route path="/about" element={<AboutFn />} />
       </Routes>
       <Footer />
     </Router>
