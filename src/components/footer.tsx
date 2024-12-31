@@ -55,7 +55,7 @@ const Footer = () => {
                 <a className="btn btn-link" href="/about">
                   About Us
                 </a>
-                <a className="btn btn-link" href="/magazineBody">
+                <a className="btn btn-link" href="/magazine">
                   Magazine
                 </a>
                 <a className="btn btn-link" href="/events">

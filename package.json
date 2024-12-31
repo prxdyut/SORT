@@ -15,6 +15,7 @@
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
+    "jquery.easing": "^1.4.1",
     "owl.carousel": "^2.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/css-modules": "^1.0.5",
+    "@types/jquery": "^3.5.32",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",

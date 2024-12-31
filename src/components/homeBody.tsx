@@ -1,19 +1,10 @@
-import WOW from "wowjs";
 import bg_1 from "./img/bg-1.webp";
 import bg_2 from "./img/bg2.webp";
+import tahami from "./img/tahami.png";
+import jog from "./img/jogendra.png";
+import ayush from "./img/ayush.png";
 
 const homeBody = () => {
-  // wow not working
-
-  // const wow = new WOW({
-  //   boxClass: "wow",
-  //   animateClass: "animate__animated",
-  //   offset: 0,
-  //   mobile: true,
-  //   live: true,
-  // });
-
-  // wow.init();
   return (
     <>
       {/* Carousel Start */}
@@ -202,11 +193,18 @@ const homeBody = () => {
               {/* Testimonial Item 1 */}
               <div
                 className="testimonial-item text-center"
-                data-dot="<img className='img-fluid' src='img/tahami.png' alt='' />"
+                data-dot={`<img className='img-fluid' src='${tahami}' alt='' />`}
               >
-                <h4 className="text-uppercase" style={{ marginBottom: "10px" }}>Tahami Syed</h4>
-                <p className="text-primary" style={{ marginBottom: "10px" }}>TT AIDS B</p>
-                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
+                <h4 className="text-uppercase" style={{ marginBottom: "10px" }}>
+                  Tahami Syed
+                </h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>
+                  TT AIDS B
+                </p>
+                <span
+                  className="fs-5"
+                  style={{ display: "block", marginBottom: "40px" }}
+                >
                   Being part of the S.O.R.T. Club has helped me develop both
                   socially and professionally. The club is more than just a
                   group, it's like a family.
@@ -215,11 +213,21 @@ const homeBody = () => {
               {/* Testimonial Item 2 */}
               <div
                 className="testimonial-item text-center"
-                data-dot="<img className='img-fluid' src='img/jogendra.png' alt='' />"
+                data-dot={`<img className='img-fluid' src='${jog}' alt='' />`}
               >
-                <h4 className="text-uppercase" style={{ marginBottom: "10px", marginTop: "40px" }}>Jogendra Suthar</h4>
-                <p className="text-primary" style={{ marginBottom: "10px" }}>TT AIDS B</p>
-                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
+                <h4
+                  className="text-uppercase"
+                  style={{ marginBottom: "10px", marginTop: "40px" }}
+                >
+                  Jogendra Suthar
+                </h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>
+                  TT AIDS B
+                </p>
+                <span
+                  className="fs-5"
+                  style={{ display: "block", marginBottom: "40px" }}
+                >
                   SORT CLUB gave me opportunities to participate in
                   skill-building activities and webinars. It helped me improve
                   my communication, technical skills, and confidence.
@@ -228,11 +236,21 @@ const homeBody = () => {
               {/* Testimonial Item 3 */}
               <div
                 className="testimonial-item text-center"
-                data-dot="<img className='img-fluid' src='img/ayush.png' alt='' />"
+                data-dot={`<img className='img-fluid' src='${ayush}' alt='' />`}
               >
-                <h4 className="text-uppercase" style={{ marginBottom: "10px", marginTop: "40px" }}>Ayush Malviya</h4>
-                <p className="text-primary" style={{ marginBottom: "10px" }}>TT CSE</p>
-                <span className="fs-5" style={{ display: "block", marginBottom: "40px" }}>
+                <h4
+                  className="text-uppercase"
+                  style={{ marginBottom: "10px", marginTop: "40px" }}
+                >
+                  Ayush Malviya
+                </h4>
+                <p className="text-primary" style={{ marginBottom: "10px" }}>
+                  TT CSE
+                </p>
+                <span
+                  className="fs-5"
+                  style={{ display: "block", marginBottom: "40px" }}
+                >
                   Through the club's workshops and mentorship programs, I
                   learned valuable skills in leadership, personal branding,
                   aiding my personal and professional growth.
@@ -243,8 +261,6 @@ const homeBody = () => {
         </div>
       </section>
       {/* <!-- Testimonial End --> */}
-
-
 
       {/* Contact Starts */}
       <section id="contact">
@@ -340,6 +356,11 @@ const homeBody = () => {
             </div>
           </div>
         </div>
+        {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> */}
+        {/* <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script> */}
+        {/* <script src="lib/owlcarousel/owl.carousel.min.js"></script> */}
       </section>
       {/* Contact Ends */}
     </>

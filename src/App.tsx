@@ -1,6 +1,7 @@
 import "./lib/animate/animate.min.css";
-import "./lib/owlcarousel/assets/owl.carousel.min.css";
-import "./components/css/bootstrap.min.css"; //global css imports
+// import "./lib/owlcarousel/assets/owl.carousel.min.css"; //enabling this makes the experiences section disappear 
+import "./components/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min"; //global css imports
 import "./components/css/style.css";
 
 //all imports must start with capital letter
@@ -9,14 +10,13 @@ import About from "./components/about";
 import Events from "./components/events";
 import Footer from "./components/footer";
 import HomeBody from "./components/homeBody";
-import HomeJsLibs from "./components/homeJsLibs";
 import Magazine from "./components/magazineBody";
 import Navbar from "./components/navBar";
+
 function Home() {
   return (
     <>
       <HomeBody />
-      <HomeJsLibs />
     </>
   );
 }
