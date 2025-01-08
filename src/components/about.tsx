@@ -1,36 +1,36 @@
 import React from "react";
-import Member11 from "./img/core/aadarsh pandey.png";
-import Member7 from "./img/core/Adarsh Kesharwani - Technical Lead.JPG";
-import Member8 from "./img/core/aniket patil.JPG";
-import Member4 from "./img/core/Atharv pimple.JPG";
-import Member3 from "./img/core/Ayush Pandey- Secretary_.jpg";
-import Member12 from "./img/core/harsh pal.JPG";
-import Member2 from "./img/core/Mehwash shaikh- Vice President .JPG";
-import Member9 from "./img/core/poornima.JPG";
-import Member10 from "./img/core/shivangi.JPG";
-import Member5 from "./img/core/sneha pandey.JPG";
-import Member6 from "./img/core/Sumeet Shah - Discipline Head.jpg";
-import Member1 from "./img/core/Vighnesh_Mishra_President.jpg";
+import Member11 from "./img/core/aadarsh pandey.webp";
+import Member7 from "./img/core/Adarsh Kesharwani - Technical Lead.webp";
+import Member8 from "./img/core/aniket patil.webp";
+import Member4 from "./img/core/Atharv pimple.webp";
+import Member3 from "./img/core/Ayush Pandey- Secretary_.webp";
+import Member12 from "./img/core/harsh pal.webp";
+import Member2 from "./img/core/Mehwash shaikh- Vice President .webp";
+import Member9 from "./img/core/poornima.webp";
+import Member10 from "./img/core/shivangi.webp";
+import Member5 from "./img/core/sneha pandey.webp";
+import Member6 from "./img/core/Sumeet Shah - Discipline Head.webp";
+import Member1 from "./img/core/Vighnesh_Mishra_President.webp";
 
-import Member15 from "./img/core/Adarsh Tiwari-Joint Event Manager.JPG";
-import Member13 from "./img/core/preyanksha.JPG";
-import Member16 from "./img/core/tanishq.JPG";
-import Member17 from "./img/core/Vedant Anand- Joint Secretary_.jpg";
-import Member14 from "./img/core/Vignesh Alle - Joint technical head.jpg";
+import Member15 from "./img/core/Adarsh Tiwari-Joint Event Manager.webp";
+import Member13 from "./img/core/preyanksha.webp";
+import Member16 from "./img/core/tanishq.webp";
+import Member17 from "./img/core/Vedant Anand- Joint Secretary_.webp";
+import Member14 from "./img/core/Vignesh Alle - Joint technical head.webp";
 
-import Member24 from "./img/core/Janhavi Nautiyal- Publication Associate.JPG";
-import Member20 from "./img/core/jayesh.JPG";
-import Member19 from "./img/core/Khushi Chandel - Secretary Associate .jpg";
-import Member22 from "./img/core/Mahek Jain - Marketing Associate_.jpg";
-import Member18 from "./img/core/nandika.jpg";
-import Member25 from "./img/core/SAPTARSHI MAITI- PUBLICATION ASSOCIATE.JPG";
-import Member21 from "./img/core/Sneha Kanojiya- Marketting Associate.jpg";
-import Member23 from "./img/core/Suhani Singh- Publication Associate_.jpg";
-import Member26 from "./img/core/Tanushree Tiwari - creative associate .jpg";
+import Member24 from "./img/core/Janhavi Nautiyal- Publication Associate.webp";
+import Member20 from "./img/core/jayesh.webp";
+import Member19 from "./img/core/Khushi Chandel - Secretary Associate .webp";
+import Member22 from "./img/core/Mahek Jain - Marketing Associate_.webp";
+import Member18 from "./img/core/nandika.webp";
+import Member25 from "./img/core/SAPTARSHI MAITI- PUBLICATION ASSOCIATE.webp";
+import Member21 from "./img/core/Sneha Kanojiya- Marketting Associate.webp";
+import Member23 from "./img/core/Suhani Singh- Publication Associate_.webp";
+import Member26 from "./img/core/Tanushree Tiwari - creative associate .webp";
 
-import Member27 from "./img/core/shivani.jpg";
-import Member28 from "./img/core/Priyanshi Jain- Literary associate.jpg";
-import Member29 from "./img/core/anurag.png";
+import Member27 from "./img/core/shivani.webp";
+import Member28 from "./img/core/Priyanshi Jain- Literary associate.webp";
+import Member29 from "./img/core/anurag.webp";
 
 import AboutsecImg from "./img/pd.webp";
 // Create About component

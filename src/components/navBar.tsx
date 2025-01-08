@@ -1,7 +1,10 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import logo from "./img/logo.webp";
 
 const Navbar: React.FC = () => {
+  const location = useLocation();
+
   return (
     <nav
       className="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
@@ -36,12 +39,14 @@ const Navbar: React.FC = () => {
             Magazine
           </a>
         </div>
-        <a
-          href="#contact"
-          className="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
-        >
-          Contact<i className="fa fa-arrow-right ms-3"></i>
-        </a>
+        {location.pathname === "/" && (
+          <a
+            href="#contact"
+            className="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
+          >
+            Contact<i className="fa fa-arrow-right ms-3"></i>
+          </a>
+        )}
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     </nav>

@@ -1,10 +1,19 @@
+import WOW from "wowjs";
 import bg_1 from "./img/bg-1.webp";
 import bg_2 from "./img/bg2.webp";
-import tahami from "./img/tahami.png";
-import jog from "./img/jogendra.png";
-import ayush from "./img/ayush.png";
 
 const homeBody = () => {
+  // wow not working
+
+  // const wow = new WOW({
+  //   boxClass: "wow",
+  //   animateClass: "animate__animated",
+  //   offset: 0,
+  //   mobile: true,
+  //   live: true,
+  // });
+
+  // wow.init();
   return (
     <>
       {/* Carousel Start */}
@@ -110,15 +119,20 @@ const homeBody = () => {
                 <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                   <div className="ps-4">
                     <br />
-                    <h3 className="text-uppercase mb-3">SORT Cricket League</h3>
+                    <h3 className="text-uppercase mb-3">Technical Event I</h3>
+                    TBA
+                    <br />
                     <ul>
                       <li>
-                        Showcase your cricket skills and stand a chance to be
-                        the SCL Champion
+                        <b>Engage in Virtual Challenges:</b> Participate in a
+                        series of online technical tasks and showcase your
+                        skills from the comfort of your home.
                       </li>
                       <li>
-                        Bond with friends, experience the thrill, and win
-                        exciting prizes
+                        <b>Learn, Innovate, and Network:</b> Explore new
+                        technologies, collaborate with like-minded tech
+                        enthusiasts, and innovate together in an engaging
+                        virtual environment.
                       </li>
                     </ul>
                   </div>
@@ -131,15 +145,20 @@ const homeBody = () => {
                 <div className="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
                   <div className="ps-4">
                     <br />
-                    <h3 className="text-uppercase mb-3">Rang-E-Alfaaz</h3>
+                    <h3 className="text-uppercase mb-3">Technical event II</h3>
+                    TBA
+                    <br />
                     <ul>
                       <li>
-                        Celebrate the art of poetry with over 25+ passionate
-                        participants
+                        <b>Engage in Technical Challenges:</b> Take part in
+                        hands-on technical tasks and showcase your skills in a
+                        dynamic, on-ground setting.
                       </li>
                       <li>
-                        Feel the energy as top performers recite their way to
-                        glory!
+                        <b>Learn, Innovate, and Network:</b> Discover new
+                        technologies, collaborate with passionate tech
+                        enthusiasts, and innovate together in an interactive
+                        offline environment.
                       </li>
                     </ul>
                   </div>
@@ -155,12 +174,14 @@ const homeBody = () => {
                     <h3 className="text-uppercase mb-3">Technical Event</h3>
                     <ul>
                       <li>
-                        Engage in a series of technical tasks and prove your
-                        mettle
+                        Engage in Virtual Challenges: Participate in a series of
+                        online technical tasks and showcase your skills from the
+                        comfort of your home.
                       </li>
                       <li>
-                        Learn, innovate, and connect with like-minded tech
-                        enthusiasts
+                        Learn, Innovate, and Network: Explore new technologies,
+                        collaborate with like-minded tech enthusiasts, and
+                        innovate together in an engaging virtual environment.
                       </li>
                     </ul>
                   </div>
@@ -193,7 +214,7 @@ const homeBody = () => {
               {/* Testimonial Item 1 */}
               <div
                 className="testimonial-item text-center"
-                data-dot={`<img className='img-fluid' src='${tahami}' alt='' />`}
+                data-dot="<img className='img-fluid' src='img/tahami.png' alt='' />"
               >
                 <h4 className="text-uppercase" style={{ marginBottom: "10px" }}>
                   Tahami Syed
@@ -213,7 +234,7 @@ const homeBody = () => {
               {/* Testimonial Item 2 */}
               <div
                 className="testimonial-item text-center"
-                data-dot={`<img className='img-fluid' src='${jog}' alt='' />`}
+                data-dot="<img className='img-fluid' src='img/jogendra.png' alt='' />"
               >
                 <h4
                   className="text-uppercase"
@@ -236,7 +257,7 @@ const homeBody = () => {
               {/* Testimonial Item 3 */}
               <div
                 className="testimonial-item text-center"
-                data-dot={`<img className='img-fluid' src='${ayush}' alt='' />`}
+                data-dot="<img className='img-fluid' src='img/ayush.png' alt='' />"
               >
                 <h4
                   className="text-uppercase"
@@ -356,11 +377,6 @@ const homeBody = () => {
             </div>
           </div>
         </div>
-        {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> */}
-        {/* <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script> */}
-        {/* <script src="lib/owlcarousel/owl.carousel.min.js"></script> */}
       </section>
       {/* Contact Ends */}
     </>
