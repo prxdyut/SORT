@@ -544,6 +544,33 @@ const About: React.FC = () => {
                     </div>
 
                     {/* Team Member 3 */}
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div className="team-item">
+                        <div className="team-img position-relative overflow-hidden">
+                            <img
+                            className="img-fluid"
+                            src={Member16}
+                            alt="Tanishq Satote - Joint Marketing Head"
+                            />
+                            <div className="team-social">
+                            <a
+                                className="btn btn-square"
+                                href="https://www.instagram.com/tanishq.satote07"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                            </div>
+                        </div>
+                        <div className="bg-secondary text-center p-4">
+                            <h5 className="text-uppercase">Tanishq Satote</h5>
+                            <span className="text-primary">Joint Marketing Head</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    {/* Team Member 4 */}
                     <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div className="team-item">
                         <div className="team-img position-relative overflow-hidden">
@@ -570,32 +597,6 @@ const About: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Team Member 4 */}
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div className="team-item">
-                        <div className="team-img position-relative overflow-hidden">
-                            <img
-                            className="img-fluid"
-                            src={Member16}
-                            alt="Tanishq Satote - Joint Marketing Head"
-                            />
-                            <div className="team-social">
-                            <a
-                                className="btn btn-square"
-                                href="https://www.instagram.com/tanishq.satote07"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fab fa-instagram"></i>
-                            </a>
-                            </div>
-                        </div>
-                        <div className="bg-secondary text-center p-4">
-                            <h5 className="text-uppercase">Tanishq Satote</h5>
-                            <span className="text-primary">Joint Marketing Head</span>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -632,31 +633,30 @@ const About: React.FC = () => {
                     </div>
 
                     {/* Team Member 2 */}
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div className="team-item">
                         <div className="team-img position-relative overflow-hidden">
                             <img
                             className="img-fluid"
-                            src={Member18}
-                            alt="Nandika Bhardwaj - Associate"
+                            src={Member28}
+                            alt="Priyanshi Jain"
                             />
                             <div className="team-social">
                             <a
                                 className="btn btn-square"
-                                href="https://www.instagram.com/nandika.bhardwajj"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="https://www.instagram.com/priyanshi4571"
                             >
                                 <i className="fab fa-instagram"></i>
                             </a>
                             </div>
                         </div>
                         <div className="bg-secondary text-center p-4">
-                            <h5 className="text-uppercase">Nandika Bhardwaj</h5>
-                            <span className="text-primary">Associate</span>
+                            <h5 className="text-uppercase">Priyanshi Jain</h5>
+                            <span className="text-primary">Joint Literary Head</span>
                         </div>
                         </div>
                     </div>
+
 
                     {/* Team Member 3 */}
                     <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -767,25 +767,27 @@ const About: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div className="team-item">
                         <div className="team-img position-relative overflow-hidden">
                             <img
                             className="img-fluid"
-                            src={Member28}
-                            alt="Priyanshi Jain"
+                            src={Member18}
+                            alt="Nandika Bhardwaj - Associate"
                             />
                             <div className="team-social">
                             <a
                                 className="btn btn-square"
-                                href="https://www.instagram.com/priyanshi4571"
+                                href="https://www.instagram.com/nandika.bhardwajj"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <i className="fab fa-instagram"></i>
                             </a>
                             </div>
                         </div>
                         <div className="bg-secondary text-center p-4">
-                            <h5 className="text-uppercase">Priyanshi Jain</h5>
+                            <h5 className="text-uppercase">Nandika Bhardwaj</h5>
                             <span className="text-primary">Associate</span>
                         </div>
                         </div>

@@ -8,12 +8,37 @@
 
 .back-to-top {
     position: fixed;
-    display: none;
+    display: none; /* Initially hidden */
     right: 45px;
     bottom: 45px;
     z-index: 99;
-}
+    width: 50px; /* Set fixed size for the button */
+    height: 50px; /* Set fixed size for the button */
+   
 
+    color: #fff; /* Icon color */
+    display: flex; /* Use Flexbox to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  }
+  
+  .back-to-top i {
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+  .back-to-top.show {
+    display: flex; /* Show button when it's visible */
+    opacity: 1;
+  }
+  
+  .back-to-top.hide {
+    display: none; /* Hide button when it's not visible */
+    opacity: 0;
+  }
+  
+
+  
 
 /*** Spinner ***/
 #spinner {

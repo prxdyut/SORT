@@ -148,23 +148,41 @@ const Footer = () => {
                 </div>
                 <div className="col-md-6 text-center text-md-end">
                   Developed By{" "}
-                  <a className="border-bottom" href="https://adarshh.me/">
+                  <a
+                    className="border-bottom"
+                    href="https://adarshh.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Adarsh Kesharwani
-                  </a>{" "}
-                  &amp;{" "}
+                  </a>
+                  {" "} &amp;{" "}
                   <a
                     className="border-bottom"
                     href="https://www.linkedin.com/in/vignesh-alle-b95411236"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Vignesh Alle
                   </a>
                   <br />
-                  Designed By{" "}
+                  
                   <a
                     className="border-bottom"
-                    href="https://www.linkedin.com/in/aadarsh-pandey-211336292"
+                    href="https://www.linkedin.com/in/chirag-ralhan-23aa63292/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Aadarsh Pandey
+                    Chirag Ralhan
+                  </a>
+                  {" "} &amp;{" "}
+                  <a
+                    className="border-bottom"
+                    href="https://www.linkedin.com/in/hardik-bansal-08aa2727a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Hardik Bansal
                   </a>
                 </div>
               </div>

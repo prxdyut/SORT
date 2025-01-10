@@ -1,22 +1,25 @@
+import React, { useState, useEffect } from "react";
 import "./lib/animate/animate.min.css";
-// import "./lib/owlcarousel/assets/owl.carousel.min.css"; //enabling this makes the experiences section disappear 
+// import "./lib/owlcarousel/assets/owl.carousel.min.css"; // enabling this makes the experiences section disappear
 import "./components/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min"; //global css imports
+import "bootstrap/dist/js/bootstrap.bundle.min"; // global CSS imports
 import "./components/css/style.css";
 
-//all imports must start with capital letter
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import About from "./components/about";
 import Events from "./components/events";
 import Footer from "./components/footer";
 import HomeBody from "./components/homeBody";
 import Magazine from "./components/magazineBody";
 import Navbar from "./components/navBar";
+import Spinner from "./components/Spinner"; // Import the Spinner component
+import BackToTop from "./components/BackToTop"; // Import BackToTop component
 
 function Home() {
   return (
     <>
       <HomeBody />
+      <BackToTop /> {/* BackToTop is only included on the Home page */}
     </>
   );
 }
@@ -42,7 +45,23 @@ function AboutFn() {
     </>
   );
 }
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading for 2 seconds
+    const timer = setTimeout(() => {
+      setLoading(false); // Stop showing the spinner
+    }, 2000);
+
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
+
+  if (loading) {
+    return <Spinner />; // Show spinner while loading
+  }
+
   return (
     <Router>
       <Navbar />
