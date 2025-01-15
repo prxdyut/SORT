@@ -287,7 +287,7 @@ const homeBody: React.FC = () => {
         </div>
       </section>
 {/* responsive */}
-      <style jsx>{`
+      <style>{`
         @media (max-width: 767px) {
           .testimonial-item {
             padding: 0 15px; /* Add padding for smaller screens */
