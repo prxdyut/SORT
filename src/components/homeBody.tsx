@@ -1,52 +1,81 @@
-
 import bg_1 from "./img/bg-1.webp";
 import bg_2 from "./img/bg2.webp";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 // Import Images
 import tahamiImg from "./img/tahami.png";
 import jogendraImg from "./img/jogendra.png";
 import ayushImg from "./img/ayush.png";
 
-
-import React,{ useEffect } from 'react';
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const homeBody: React.FC = () =>  {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const testimonials = [
+  {
+    name: "Tahami Syed",
+    designation: "TT AIDS B",
+    feedback:
+      "Being part of the S.O.R.T. Club has helped me develop both socially and professionally. The club is more than just a group; it's like a family.",
+    image: tahamiImg,
+  },
+  {
+    name: "Jogendra Suthar",
+    designation: "TT AIDS B",
+    feedback:
+      "SORT CLUB gave me opportunities to participate in skill-building activities and webinars. It helped me improve my communication, technical skills, and confidence.",
+    image: jogendraImg,
+  },
+  {
+    name: "Ayush Malviya",
+    designation: "TT CSE",
+    feedback:
+      "Through the club's workshops and mentorship programs, I learned valuable skills in leadership, personal branding, aiding my personal and professional growth.",
+    image: ayushImg,
+  },
+];
+
+const homeBody: React.FC = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      offset: 200,    // Offset from the viewport to trigger animations
-      once: true,     // Animation occurs only once
+      offset: 200, // Offset from the viewport to trigger animations
+      once: true, // Animation occurs only once
     });
   }, []);
 
-  const testimonials = [
-    {
-      name: "Tahami Syed",
-      designation: "TT AIDS B",
-      feedback:
-        "Being part of the S.O.R.T. Club has helped me develop both socially and professionally. The club is more than just a group; it's like a family.",
-      image: tahamiImg, // Image import assigned here
-    },
-    {
-      name: "Jogendra Suthar",
-      designation: "TT AIDS B",
-      feedback:
-        "SORT CLUB gave me opportunities to participate in skill-building activities and webinars. It helped me improve my communication, technical skills, and confidence.",
-      image: jogendraImg,
-    },
-    {
-      name: "Ayush Malviya",
-      designation: "TT CSE",
-      feedback:
-        "Through the club's workshops and mentorship programs, I learned valuable skills in leadership, personal branding, aiding my personal and professional growth.",
-      image: ayushImg,
-    },
-  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    appendDots: (dots: React.ReactNode) => (
+      <div style={{ bottom: "20px" }}>
+        <ul style={{ margin: "0px", padding: "0px" }}>{dots}</ul>
+      </div>
+    ),
+    customPaging: (i: number) => (
+      <img
+        src={testimonials[i].image}
+        alt={testimonials[i].name}
+        style={{
+          width: "50px",
+          height: "50px",
+          borderRadius: "50%",
+          objectFit: "cover",
+        }}
+      />
+    ),
+  };
+
   return (
     <>
       {/* Carousel Start */}
@@ -226,47 +255,49 @@ const homeBody: React.FC = () =>  {
       </section>
       {/* Events End */}
 
-      <section id="experience">
-      <div className="container-xxl py-5">
-        <div className="container">
-          <div
-            className="text-center mx-auto mb-5"
-            data-aos="fade-up"
-            style={{ maxWidth: "600px" }}
-          >
-            <p className="d-inline-block bg-secondary text-primary py-1 px-4">
-              Experiences
-            </p>
-            <h1 className="text-uppercase">What Our Members Say!</h1>
-          </div>
-          <OwlCarousel
-            className="testimonial-carousel"
-            items={1}
-            loop
-            autoplay
-            dots
-            dotData
-            nav={false}
-          >
-            {testimonials.map((testimonial, index) => (
-              <div
-                className="testimonial-item text-center"
-                data-dot={`<img class='img-fluid' src='${testimonial.image}' alt='${testimonial.name}' />`}
-                key={index}
-                data-aos="fade-up"
-              >
-                <h4 className="text-uppercase">{testimonial.name}</h4>
-                <p className="text-primary">{testimonial.designation}</p>
-                <span className="fs-5">{testimonial.feedback}</span>
+      <section id="experience" style={{ position: "relative", zIndex: 1 }}>
+        <div className="container-xxl py-5">
+          <div className="container">
+            <div
+              className="text-center mx-auto mb-5"
+              data-aos="fade-up"
+              style={{ maxWidth: "600px" }}
+            >
+              <p className="d-inline-block bg-secondary text-primary py-1 px-4">
+                Experiences
+              </p>
+              <h1 className="text-uppercase">What Our Members Say!</h1>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <div className="col-12 col-md-6">
+                {" "}
+                {/* Use Bootstrap's grid */}
+                <Slider {...settings}>
+                  {testimonials.map((testimonial, index) => (
+                    <div className="testimonial-item text-center" key={index}>
+                      <h4 className="text-uppercase">{testimonial.name}</h4>
+                      <p className="text-primary">{testimonial.designation}</p>
+                      <span className="fs-5">{testimonial.feedback}</span>
+                    </div>
+                  ))}
+                </Slider>
               </div>
-            ))}
-          </OwlCarousel>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+{/* responsive */}
+      <style jsx>{`
+        @media (max-width: 767px) {
+          .testimonial-item {
+            padding: 0 15px; /* Add padding for smaller screens */
+          }
 
-
-
+          .text-center {
+            text-align: center; /* Ensure text stays centered */
+          }
+        }
+      `}</style>
 
       {/* Contact Starts */}
       <section id="contact">

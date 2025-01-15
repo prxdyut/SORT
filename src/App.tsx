@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./lib/animate/animate.min.css";
-// import "./lib/owlcarousel/assets/owl.carousel.min.css"; // enabling this makes the experiences section disappear
 import "./components/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min"; // global CSS imports
 import "./components/css/style.css";
 
-import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import About from "./components/about";
 import Events from "./components/events";
 import Footer from "./components/footer";

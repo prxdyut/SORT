@@ -207,7 +207,7 @@ const Events: React.FC = () => {
                   aria-labelledby={`event${event.id}ModalLabel`}
                   aria-hidden="true"
                 >
-                  <div className="modal-dialog">
+                  <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                       <div className="modal-header">
                         <h5
@@ -234,6 +234,19 @@ const Events: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                {/* responsive */}
+                <style jsx>{`
+                  .modal-dialog {
+                    max-width: 90%; /* Optional: to limit the modal width on mobile devices */
+                    margin: 1.75rem auto; /* Ensures vertical centering */
+                  }
+
+                  @media (max-width: 767px) {
+                    .modal-dialog {
+                      margin-top: 10vh; /* Adjust top margin for mobile */
+                    }
+                  }
+                `}</style>
               </div>
             ))}
           </div>
