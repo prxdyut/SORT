@@ -34,18 +34,18 @@ $(document).ready(() => {
   // Sticky Navbar
   $(window).scroll(() => {
     if ($(window).scrollTop() > 300) {
-      $(".sticky-top").addClass("shadow-sm").css("top", "0px");
+      $(".sticky-top")?.addClass("shadow-sm").css("top", "0px");
     } else {
-      $(".sticky-top").removeClass("shadow-sm").css("top", "-100px");
+      $(".sticky-top")?.removeClass("shadow-sm").css("top", "-100px");
     }
   });
 
   // Back to top button
   $(window).scroll(() => {
-    $(".back-to-top")?.fadeToggle($(window).scrollTop() > 300, "slow");
+    $(".back-to-top")?.fadeToggle($(window).scrollTop() > 300 ? "slow" : 0);
   });
 
-  $(".back-to-top").click(() => {
+  $(".back-to-top")?.click(() => {
     $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
     return false;
   });
