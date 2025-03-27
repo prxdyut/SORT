@@ -19,7 +19,10 @@ $(document).ready(() => {
   "use strict";
 
   // Spinner
-  $("#spinner")?.removeClass("show");
+  const spinner = $("#spinner");
+  if (spinner.length) {
+    spinner.removeClass("show");
+  }
 
   // Initiate WOW.js
   const wow = new WOW({
@@ -33,24 +36,31 @@ $(document).ready(() => {
 
   // Sticky Navbar
   $(window).scroll(() => {
-    if ($(window).scrollTop() > 300) {
-      $(".sticky-top")?.addClass("shadow-sm").css("top", "0px");
-    } else {
-      $(".sticky-top")?.removeClass("shadow-sm").css("top", "-100px");
+    const stickyTop = $(".sticky-top");
+    if (stickyTop.length) {
+      if ($(window).scrollTop() > 300) {
+        stickyTop.addClass("shadow-sm").css("top", "0px");
+      } else {
+        stickyTop.removeClass("shadow-sm").css("top", "-100px");
+      }
     }
   });
 
   // Back to top button
   $(window).scroll(() => {
-    if ($(".back-to-top").length) {
-      $(".back-to-top").fadeToggle($(window).scrollTop() > 300 ? "slow" : 0);
+    const backToTop = $(".back-to-top");
+    if (backToTop.length) {
+      backToTop.fadeToggle($(window).scrollTop() > 300 ? "slow" : 0);
     }
   });
 
-  $(".back-to-top").on("click", function() {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
-    return false;
-  });
+  const backToTopBtn = $(".back-to-top");
+  if (backToTopBtn.length) {
+    backToTopBtn.on("click", function() {
+      $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
+      return false;
+    });
+  }
 
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
