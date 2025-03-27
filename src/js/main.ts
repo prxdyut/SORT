@@ -1,12 +1,22 @@
 import $ from "jquery";
-import WOW  from "wowjs";
+import { WOW } from "wowjs";
 import "animate.css";
+import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
+import "jquery-ui/ui/effects/effect-slide";
 
-(window as any).$ = $;
-(window as any).jQuery = $;
+declare global {
+  interface Window {
+    $: any;
+    jQuery: any;
+  }
+}
 
-(function ($) {
+// Assign jQuery to the global window object
+window.$ = $;
+window.jQuery = $;
+
+$(document).ready(() => {
   "use strict";
 
   // Spinner
@@ -30,8 +40,8 @@ import "owl.carousel";
   wow.init();
 
   // Sticky Navbar
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > 300) {
       $(".sticky-top").addClass("shadow-sm").css("top", "0px");
     } else {
       $(".sticky-top").removeClass("shadow-sm").css("top", "-100px");
@@ -39,15 +49,16 @@ import "owl.carousel";
   });
 
   // Back to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+  $(window).scroll(() => {
+    if ($(window).scrollTop() > 300) {
       $(".back-to-top").fadeIn("slow");
     } else {
       $(".back-to-top").fadeOut("slow");
     }
   });
-  $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+
+  $(".back-to-top").click(() => {
+    $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
     return false;
   });
 
@@ -61,14 +72,12 @@ import "owl.carousel";
     items: 1,
     dotsData: true,
   });
-})(jQuery);
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Highlight active navbar link based on the current page
   const currentPage = window.location.pathname.split("/").pop();
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  navLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
+  $(".navbar-nav .nav-link").each(function () {
+    if ($(this).attr("href") === currentPage) {
+      $(this).addClass("active");
     }
   });
 });
