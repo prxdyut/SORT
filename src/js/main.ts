@@ -42,10 +42,12 @@ $(document).ready(() => {
 
   // Back to top button
   $(window).scroll(() => {
-    $(".back-to-top")?.fadeToggle($(window).scrollTop() > 300 ? "slow" : 0);
+    if ($(".back-to-top").length) {
+      $(".back-to-top").fadeToggle($(window).scrollTop() > 300 ? "slow" : 0);
+    }
   });
 
-  $(".back-to-top")?.click(() => {
+  $(".back-to-top").on("click", function() {
     $("html, body").animate({ scrollTop: 0 }, 1500, "swing");
     return false;
   });
