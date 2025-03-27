@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./lib/animate/animate.min.css";
 import "./components/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min"; // global CSS imports
