@@ -1,7 +1,6 @@
 import $ from "jquery";
 import { WOW } from "wowjs";
 import "animate.css";
-import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
 import "jquery-ui-dist/jquery-ui";
 
@@ -9,9 +8,6 @@ declare global {
   interface Window {
     $: any;
     jQuery: any;
-  }
-  interface JQuery {
-    owlCarousel: (options?: any) => JQuery;
   }
 }
 
@@ -23,10 +19,7 @@ $(document).ready(() => {
   "use strict";
 
   // Spinner
-  const spinnerElement = $("#spinner");
-  if (spinnerElement?.length) {
-    spinnerElement.removeClass("show");
-  }
+  $("#spinner")?.removeClass("show");
 
   // Initiate WOW.js
   const wow = new WOW({
@@ -49,11 +42,7 @@ $(document).ready(() => {
 
   // Back to top button
   $(window).scroll(() => {
-    if ($(window).scrollTop() > 300) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
+    $(".back-to-top")?.fadeToggle($(window).scrollTop() > 300, "slow");
   });
 
   $(".back-to-top").click(() => {
@@ -62,7 +51,7 @@ $(document).ready(() => {
   });
 
   // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel?.({
+  $(".testimonial-carousel").owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
     loop: true,
@@ -72,7 +61,7 @@ $(document).ready(() => {
     dotsData: true,
   });
 
-  // Highlight active navbar link based on the current page
+  // Highlight active navbar link
   const currentPage = window.location.pathname.split("/").pop();
   $(".navbar-nav .nav-link").each(function () {
     if ($(this).attr("href") === currentPage) {
