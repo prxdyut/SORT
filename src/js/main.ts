@@ -3,16 +3,19 @@ import { WOW } from "wowjs";
 import "animate.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
-import "jquery-ui/ui/effects/effect-slide";
+import "jquery-ui-dist/jquery-ui";
 
 declare global {
   interface Window {
     $: any;
     jQuery: any;
   }
+  interface JQuery {
+    owlCarousel: (options?: any) => JQuery;
+  }
 }
 
-// Assign jQuery to the global window object
+// Assign jQuery to global window object
 window.$ = $;
 window.jQuery = $;
 
@@ -20,14 +23,10 @@ $(document).ready(() => {
   "use strict";
 
   // Spinner
-  const spinner = () => {
-    setTimeout(() => {
-      if ($("#spinner").length > 0) {
-        $("#spinner").removeClass("show");
-      }
-    }, 1);
-  };
-  spinner();
+  const spinnerElement = $("#spinner");
+  if (spinnerElement?.length) {
+    spinnerElement.removeClass("show");
+  }
 
   // Initiate WOW.js
   const wow = new WOW({
@@ -63,7 +62,7 @@ $(document).ready(() => {
   });
 
   // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel({
+  $(".testimonial-carousel").owlCarousel?.({
     autoplay: true,
     smartSpeed: 1000,
     loop: true,
